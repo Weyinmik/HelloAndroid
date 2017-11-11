@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.helloandroid.MainActivity">
+
+    <ImageView
+        android:id="@+id/udacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/udacity"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/udacity"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="8dp"
+        android:text="A Lifelong learning platform where you can enhance your skillsets and boost your hireability through flexible and independent learning. Visit www.udacity.com or contact:"
+        android:autoLink="all"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Udacity"
+        android:layout_below="@id/about"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:id="@+id/address1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2465 Latham St"
+        android:layout_below="@id/name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:id="@+id/address2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mountain View, CA 94043"
+        android:layout_below="@id/address1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:id="@+id/telephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="650-555-5555"
+        android:layout_below="@id/address2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:fontFamily="sans-serif"/>
+
+    <Button
+        android:id="@+id/button_id"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="View Courses"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="4dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
